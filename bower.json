@@ -1,0 +1,11 @@
+{
+  "name": "getviewport",
+  "description": "returns viewport actual size. Values cached for perfomance",
+  "main": "dist/getviewport.min.js",
+  "version": "0.0.1",
+  "ignore": [
+    ".jshintrc",
+    "node_modules"
+  ]
+}
+
