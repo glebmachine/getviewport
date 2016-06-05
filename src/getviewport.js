@@ -1,23 +1,27 @@
+'use strict';
 
-;(function(){
-  window.getViewport = function(){
-    var viewport = false;
+module.exports = function() {
+  var viewport = false;
 
-    function calcViewport() {
-      var e = window, a = 'inner';
-      if (!('innerWidth' in window )) {
-        a = 'client';
-        e = document.documentElement || document.body;
-      }
-      viewport = { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+  function calcViewport() {
+    var e = window, a = 'inner';
 
+    if (!('innerWidth' in window )) {
+      a = 'client';
+      e = document.documentElement || document.body;
     }
 
-    $(window).resize(function(){ viewport = false; })
+    viewport = { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+  }
 
-    return function(){
-      if (!viewport) calcViewport();
-      return viewport;
+  window.addEventListener('resize', function() {
+    viewport = false;
+  });
+
+  return function() {
+    if (!viewport) {
+      calcViewport();
     }
-  }();
-})();
+    return viewport;
+  };
+};
