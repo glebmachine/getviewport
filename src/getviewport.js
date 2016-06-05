@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function() {
+var getViewport = (function() {
   var viewport = false;
 
   function calcViewport() {
@@ -24,4 +24,6 @@ module.exports = function() {
     }
     return viewport;
   };
-};
+})();
+
+module.exports = getViewport;
