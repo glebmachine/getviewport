@@ -1,25 +1,30 @@
 {
-    "name": "getviewport",
-    "version": "0.1.0",
-    "description": "getViewport() returns viewport actual size. Values cached for perfomance",
-    "keywords": [
-        "browser",
-        "viewport",
-        "fps",
-        "optimized",
-    ],
-    "index": "dist/getviewport.min.js",
-    "author": "Gleb Mikheev <glebmachine@gmail.com>",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/glebmachine/getviewport.git"
-    },
-    "bugs": {
-        "url": "https://github.com/glebmachine/getviewport/issues"
-    },
-    "homepage": "https://github.com/glebmachine/getviewport",
-    "scripts": {
-        "build": "gulp"
-    }
+  "name": "getviewport",
+  "version": "0.1.0",
+  "description": "getViewport() returns viewport actual size. Values cached for perfomance",
+  "keywords": [
+    "browser",
+    "viewport",
+    "fps",
+    "optimized"
+  ],
+  "index": "dist/getviewport.min.js",
+  "author": "Gleb Mikheev <glebmachine@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glebmachine/getviewport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glebmachine/getviewport/issues"
+  },
+  "homepage": "https://github.com/glebmachine/getviewport",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-uglify": "1.5.3"
+  }
 }
