@@ -8,7 +8,7 @@
     "fps",
     "optimized"
   ],
-  "index": "dist/getviewport.min.js",
+  "main": "dist/getviewport.min.js",
   "author": "Gleb Mikheev <glebmachine@gmail.com>",
   "license": "MIT",
   "repository": {
